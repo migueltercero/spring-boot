@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: mi aplicacion
+jccm:
+  provincias:
+    - id: 1
+      descripcion: Toledo
+    - id: 2
+      descripcion: Ciudad Real
