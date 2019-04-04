@@ -1,0 +1,8 @@
+logging:
+  file: target/log/mylog.log
+  pattern:
+    console: 'log - %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n'
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.jdbc.core: DEBUG
+    org.hibernate.SQL: DEBUG
