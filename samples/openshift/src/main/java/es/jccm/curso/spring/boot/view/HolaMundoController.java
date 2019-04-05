@@ -9,6 +9,6 @@ public class HolaMundoController {
    
     @GetMapping("/")
     public String hello(Model model) {
-        return "Hola Openshift   !!!";
+        return "Hola Openshift!!!";
     }
 }
