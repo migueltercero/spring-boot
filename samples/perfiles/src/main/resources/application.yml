@@ -1,6 +1,3 @@
 spring:
   application:
-    name: mi aplicacion
-  profiles:
-    active:
-      - dev
+    name: defecto
