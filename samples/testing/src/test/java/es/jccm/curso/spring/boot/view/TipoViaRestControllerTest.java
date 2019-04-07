@@ -39,21 +39,17 @@ public class TipoViaRestControllerTest {
 	@Before
 	public void setupMock() throws SQLException {
 		List<TipoVia> TipoVias = new ArrayList<TipoVia>();
-
 		// @formatter:off
 		TipoVias.add(TipoVia.builder()
 								.code(1L)
 								.display("Calle")
 							  	.created(new Date())
-							  	.build());
-		
+							  	.build());		
 		TipoVias.add(TipoVia.builder()
 								.code(2L)
 								.display("Avenida")				
 								.created(new Date())
-			  					.build());
-		
-		
+			  					.build());	
 		Mockito.when(repository.findAll())
 			   .thenReturn(TipoVias);
         // @formatter:on
@@ -67,10 +63,8 @@ public class TipoViaRestControllerTest {
 					.andExpect(header().string("Content-Type", "application/json;charset=UTF-8"))
 					.andExpect(jsonPath("$[0].code", is(1)))
 					.andExpect(jsonPath("$[0].display", is("Calle")))
-					.andExpect(jsonPath("$[0].created", notNullValue()))
 					.andExpect(jsonPath("$[1].code", is(2)))
 					.andExpect(jsonPath("$[1].display", is("Avenida")))
-					.andExpect(jsonPath("$[1].created", notNullValue()))		
 				.andDo(print());
 		// @formatter:on
 	}
