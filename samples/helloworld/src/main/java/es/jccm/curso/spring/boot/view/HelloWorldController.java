@@ -9,6 +9,6 @@ public class HelloWorldController {
    
     @GetMapping("/")
     public String hello(Model model) {
-        return "Hola Mundo!!!";
+        return "Hola Mundo!!";
     }
 }
