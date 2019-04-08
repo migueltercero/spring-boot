@@ -1,0 +1,15 @@
+-- JDK
+https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-windows-i586.exe
+
+-- Eclipse
+https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2019-03/R/eclipse-java-2019-03-R-win32-x86_64.zip
+
+-- Spring Tools 4.0 (desde el eclipse)
+
+-- Lombok
+https://projectlombok.org/downloads/lombok.jar
+
+-- Openshit
+https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-windows.zip
+
+
