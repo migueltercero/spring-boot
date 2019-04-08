@@ -1,14 +1,21 @@
 package es.jccm.curso.spring.boot.view;
 
-import org.springframework.ui.Model;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
-public class HolaMundoController {
+@Slf4j
+public class CacheableController {
    
     @GetMapping("/")
-    public String hello(Model model) {
-        return "Hola Mundo!!!";
+    @Cacheable("hello")
+    public ResponseEntity<String> hello() {
+        log.info("invocando sin cache");
+    	return new ResponseEntity<String>("Hola Mundo!!!", HttpStatus.OK);
     }
 }
