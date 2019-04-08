@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  es.jccm.fomento.boot.healthcheck.HealthCheckAutoConfiguration
