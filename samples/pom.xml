@@ -15,6 +15,10 @@
 		<module>actuator</module>
 		<module>aspects</module>
 		<module>cache</module>
+		<module>cloud-config/cloud-config-client</module>
+		<module>cloud-config/cloud-config-server</module>
+		<module>cloud-netflix/cloud-netflix-client1</module>
+		<module>cloud-netflix/cloud-netflix-server</module>
 		<module>configuration</module>
 		<module>custom-starter</module>
 		<module>datarest</module>
@@ -23,12 +27,9 @@
 		<module>logging</module>
 		<module>openshift</module>
 		<module>perfiles</module>
+		<module>validation</module>
 		<module>war</module>
 		<module>webmvc</module>
-		<module>cloud-config/cloud-config-client</module>
-		<module>cloud-config/cloud-config-server</module>
-		<module>cloud-netflix/cloud-netflix-client1</module>
-		<module>cloud-netflix/cloud-netflix-server</module>
 	</modules>
 
 </project>
