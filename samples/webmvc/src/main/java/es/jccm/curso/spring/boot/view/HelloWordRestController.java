@@ -20,7 +20,7 @@ public class HelloWordRestController {
     
     @GetMapping("/object")
     public ResponseEntity<List<MyObject>> object() {
-    	List<MyObject> objects = new ArrayList();
+    	List<MyObject> objects = new ArrayList<>();
     	MyObject object1 = new MyObject();
     	object1.setId(1);
     	object1.setDescription("object 1");

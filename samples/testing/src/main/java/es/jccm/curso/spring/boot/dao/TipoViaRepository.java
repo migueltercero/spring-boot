@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import es.jccm.curso.spring.boot.entity.TipoVia;
 
 @Repository
-public interface TipoViaRepository extends PagingAndSortingRepository<TipoVia, String> {
+public interface TipoViaRepository extends PagingAndSortingRepository<TipoVia, Long> {
 	Iterable<TipoVia> findByDisplayContainsIgnoreCase(@Param("display") String display);
 }

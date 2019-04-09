@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Route
+metadata:
+  name: cloud-kubernetes-server
+spec:
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: cloud-kubernetes-server
