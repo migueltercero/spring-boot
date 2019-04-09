@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>es.jccm.curso.spring.boot</groupId>
-	<artifactId>curso</artifactId>
+	<artifactId>configuracion</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>curso</name>
 	<description>Demo project for Spring Boot</description>

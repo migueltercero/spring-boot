@@ -17,9 +17,11 @@
 		<module>cache</module>
 		<module>cloud-config/cloud-config-client</module>
 		<module>cloud-config/cloud-config-server</module>
-		<module>cloud-netflix/cloud-netflix-client1</module>
-		<module>cloud-netflix/cloud-netflix-server</module>
-		<module>configuration</module>
+		<module>cloud-kubernetes/cloud-kubernetes-configuration</module>
+		<module>cloud-kubernetes/cloud-kubernetes-client</module>
+		<module>cloud-kubernetes/cloud-kubernetes-service</module>
+		<module>cloud-kubernetes/cloud-kubernetes-discovery</module>
+		<module>configuracion</module>
 		<module>custom-starter</module>
 		<module>datarest</module>
 		<module>helloworld</module>
