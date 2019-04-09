@@ -8,9 +8,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>es.jccm.curso.spring.boot</groupId>
-	<artifactId>cloud-kubernetes-server</artifactId>
+	<artifactId>cloud-kubernetes-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>curso</name>
+	<name>cloud-kubernetes-service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

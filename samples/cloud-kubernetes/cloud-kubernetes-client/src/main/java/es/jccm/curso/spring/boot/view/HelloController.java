@@ -15,7 +15,7 @@ public class HelloController {
 		this.nameService = nameService;
 	}
 
-	@RequestMapping("/hello")
+	@RequestMapping("/")
 	public String getGreeting(
 			@RequestParam(value = "delay", defaultValue = "0") int delay) {
 		return String.format("Hello from %s!", this.nameService.getName(delay));

@@ -14,7 +14,7 @@ import es.jccm.curso.spring.boot.configuration.RibbonConfiguration;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-@RibbonClient(name = "name-service", configuration = RibbonConfiguration.class)
+@RibbonClient(name = "cloud-kubernetes-service", configuration = RibbonConfiguration.class)
 public class Application {
 
 	public static void main(String[] args) {

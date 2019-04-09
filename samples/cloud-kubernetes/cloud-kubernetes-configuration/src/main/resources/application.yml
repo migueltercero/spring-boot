@@ -1,4 +1,3 @@
-spring:  application:    name: cloud-kubernetes-configuration
 management:
   endpoint:
     restart:

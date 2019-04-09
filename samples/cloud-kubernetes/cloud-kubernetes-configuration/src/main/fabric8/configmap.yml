@@ -1,0 +1,6 @@
+metadata:
+  name: ${project.artifactId}
+data:
+  application.properties: |-
+    bean.message=Hello Config!!!
+    another.property=value

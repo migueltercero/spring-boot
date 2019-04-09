@@ -17,11 +17,6 @@ public class KubernetesClientController {
 
 
 	@RequestMapping("/")
-	public String hello() {
-		return "Hello World";
-	}
-
-	@RequestMapping("/services")
 	public List<String> services() {
 		return this.discoveryClient.getServices();
 	}

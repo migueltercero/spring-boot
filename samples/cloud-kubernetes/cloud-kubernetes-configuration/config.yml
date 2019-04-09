@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: reload-example
+  name: cloud-kubernetes-configuration
 data:
   application.properties: |-
     bean.message=Hello World!
