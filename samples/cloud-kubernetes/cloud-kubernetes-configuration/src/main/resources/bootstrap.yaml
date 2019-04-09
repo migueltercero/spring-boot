@@ -1,6 +1,6 @@
 spring:
   application:
-    name: reload-example
+    name: cloud-kubernetes-configuration
   cloud:
     kubernetes:
       reload:
