@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import es.jccm.curso.spring.boot.client.ServiceClient;
+import es.jccm.curso.spring.boot.client.NameClient;
 
 @RestController
 public class NameController {
@@ -24,7 +24,7 @@ public class NameController {
 	private RestTemplate restTemplate;
 	
 	@Autowired
-	private ServiceClient client;
+	private NameClient client;
 	
 	@RequestMapping("/services")
 	public List<String> services() {
