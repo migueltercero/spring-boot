@@ -12,12 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import es.jccm.curso.spring.boot.client.NameClient;
-import es.jccm.curso.spring.boot.client.ProvinciaClient;
+import es.jccm.curso.spring.boot.client.ServiceClient;
 import es.jccm.curso.spring.boot.dto.ProvinciaDto;
 
 @RestController
-public class NameController {
+public class HomeController {
 
 	@Autowired
 	@Lazy
@@ -28,10 +27,7 @@ public class NameController {
 	private RestTemplate restTemplate;
 	
 	@Autowired
-	private NameClient nameClient;
-	
-	@Autowired
-	private ProvinciaClient provinciaClient;
+	private ServiceClient serviceClient;
 	
 	@RequestMapping("/services")
 	public List<String> services() {
@@ -40,12 +36,12 @@ public class NameController {
 	
 	@RequestMapping("/name")
 	public String name() {
-		return String.format("service -> %s", nameClient.name());
+		return String.format("service -> %s", serviceClient.name());
 	}
 	
 	@RequestMapping("/")
 	public ResponseEntity<List<ProvinciaDto>> home() {
-		return new ResponseEntity<>(provinciaClient.provincias(), HttpStatus.OK);
+		return new ResponseEntity<>(serviceClient.provincias(), HttpStatus.OK);
 	}
 
 }
