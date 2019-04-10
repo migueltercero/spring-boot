@@ -17,6 +17,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<customstarter.version>0.0.1-SNAPSHOT</customstarter.version>
 	</properties>
 
 	<dependencies>
@@ -34,10 +35,19 @@
 		<dependency>
 			<groupId>es.jccm.curso.spring.boot</groupId>
 			<artifactId>customstarter</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>es.jccm.curso.spring.boot</groupId>
+				<artifactId>customstarter</artifactId>
+				<version>${customstarter.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>
