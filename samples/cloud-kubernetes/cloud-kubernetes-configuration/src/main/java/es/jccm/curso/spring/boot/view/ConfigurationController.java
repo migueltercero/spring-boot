@@ -8,7 +8,6 @@ import es.jccm.curso.spring.boot.configuration.Config;
 import es.jccm.curso.spring.boot.configuration.UtilConfiguration;
 import lombok.extern.slf4j.Slf4j;
 
-
 @RestController
 @Slf4j
 public class ConfigurationController {

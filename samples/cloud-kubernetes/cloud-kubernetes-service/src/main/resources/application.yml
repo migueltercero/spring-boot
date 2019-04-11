@@ -1,6 +1,3 @@
 spring:
   application:
-    name: cloud-kubernetes-service
-
-server:
-  port: 8080
+    name: cloud-kubernetes-services
