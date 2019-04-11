@@ -2,8 +2,13 @@ spring:
   application:
     name: mi aplicacion
 jccm:
+  municipios:
+    toledo: 
+       codigo: 1
+       descripcion: toledo
   provincias:
     - id: 1
       descripcion: Toledo
     - id: 2
       descripcion: Ciudad Real
+  

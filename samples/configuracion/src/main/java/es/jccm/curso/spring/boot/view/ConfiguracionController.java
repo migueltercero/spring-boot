@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import es.jccm.curso.spring.boot.configuration.Configuration;
+import es.jccm.curso.spring.boot.configuration.Municipio;
 import es.jccm.curso.spring.boot.configuration.Provincia;
 
 @RestController
@@ -38,5 +39,12 @@ public class ConfiguracionController {
         	response += String.format("%s: %s", provincia.getId(), provincia.getDescripcion());
         }
 		return response;
+    }
+	
+	@GetMapping("/municipio/toledo")
+    public String configuration() {
+		Municipio municipio = configuration.getMunicipios().get("toledo");
+        return String.format("%s: %s", municipio.getCodigo(), municipio.getDescripcion());
+
     }
 }

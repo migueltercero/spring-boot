@@ -22,10 +22,6 @@ public class HomeController {
 	@Lazy
 	private DiscoveryClient discoveryClient;
 	
-	
-	@LoadBalanced
-	private RestTemplate restTemplate;
-	
 	@Autowired
 	private ServiceClient serviceClient;
 	
