@@ -1,3 +1,4 @@
 spring:
+  profiles:    active:    - dev
   application:
-    name: defecto
+    name: el nombre de mi aplicacion por defecto

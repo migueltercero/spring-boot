@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import lombok.Data;
 
-@ConfigurationProperties(prefix="jccm")
+@ConfigurationProperties(prefix="jccm.configuration.myapp")
 @Data
 public class Configuration {
 	List<Provincia> provincias;

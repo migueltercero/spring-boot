@@ -1,9 +1,8 @@
-server:
-  port: 8080
-  servlet:
-    context-path: /webmvc
+#server:
+  #servlet:
+    #context-path: /webmvc
 spring:
   mvc:
     view:
       prefix: /templates/
-      suffix: .jsp
+      suffix: .html
