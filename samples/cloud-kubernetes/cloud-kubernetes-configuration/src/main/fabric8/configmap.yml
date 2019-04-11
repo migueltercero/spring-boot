@@ -3,3 +3,4 @@ metadata:
 data:
   application.properties: |-
     jccm.message=mensaje via Kubernetes ConfigMap
+    logging.level.org.springframework=INFO
