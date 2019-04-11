@@ -32,6 +32,7 @@
 		<module>validation</module>
 		<module>war</module>
 		<module>webmvc</module>
+		<module>testing</module>
 	</modules>
 
 </project>
