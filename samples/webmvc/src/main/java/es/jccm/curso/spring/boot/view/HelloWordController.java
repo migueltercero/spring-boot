@@ -12,7 +12,7 @@ public class HelloWordController {
         return "home";
     }
     
-    @GetMapping("/webjars")
+    @GetMapping("/libs")
     public String webjars(Model model) {
         return "webjars";
     }

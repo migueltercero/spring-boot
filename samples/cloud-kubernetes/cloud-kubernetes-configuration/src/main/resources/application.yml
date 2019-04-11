@@ -1,3 +1,5 @@
+jccm:
+  message: 'mensaje por defecto'
 management:
   endpoint:
     restart:
