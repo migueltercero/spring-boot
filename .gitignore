@@ -1,7 +1,4 @@
 .metadata/
-doc/*.pptx
-software/jdk-8u201-windows-x64.exe
-software/eclipse-java-2019-03-R-win32-x86_64.zip
 samples/**/.mvn
 samples/**/target
 samples/**/.classpath
