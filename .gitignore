@@ -1,4 +1,6 @@
 .metadata/
+doc/*.docx
+doc/*.pptx
 samples/**/.mvn
 samples/**/target
 samples/**/.classpath
